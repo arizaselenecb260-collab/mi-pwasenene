@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | IA Futura</title>
+  <meta name="theme-color" content="#c9b6f0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="imagenes/icon-192.png">
+  <link rel="apple-touch-icon" href="imagenes/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="escuela-barra">
+    <img src="imagenes/logo-escuela.png" alt="Logo CBTis 260" class="logo">
+    <p>Centro de Bachillerato Tecnológico Industrial y de Servicios Núm. 260 · <small>Carmen Serdán Alatriste</small></p>
+  </div>
+
+  <header class="hero">
+    <div class="hero-text">
+      <p class="etiqueta">ESTAMOS PARA AYUDARTE</p>
+      <h1>📩 Contacto</h1>
+      <h2>¿Tienes alguna pregunta?</h2>
+      <p>Envíanos un mensaje para conocer tus dudas, comentarios o sugerencias sobre nuestro proyecto de Inteligencia Artificial.</p>
+      <a href="index.html" class="boton">← Volver al inicio</a>
+    </div>
+    <div class="hero-image">
+      <img src="imagenes/Imagen-IA.png" alt="Inteligencia Artificial">
+    </div>
+  </header>
+
+  <nav aria-label="Menú principal">
+    <a href="index.html">Inicio</a>
+    <a href="que-es.html">¿Qué es la IA?</a>
+    <a href="usos.html">Usos</a>
+    <a href="historia.html">Historia</a>
+    <a href="ventajas.html">Ventajas</a>
+    <div class="menu-grupo">
+      <button type="button" class="menu-btn" aria-haspopup="true" aria-expanded="false">Mi modelo ▾</button>
+      <div class="submenu">
+        <a href="problematica.html">Problemática</a>
+        <a href="justificacion.html">Justificación</a>
+        <a href="funciona.html">¿Cómo funciona?</a>
+        <a href="resuelve.html">Reconocedor</a>
+      </div>
+    </div>
+    <a href="contacto.html" class="activo" aria-current="page">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="contacto">
+      <p class="etiqueta claro">FORMULARIO</p>
+      <h2>💬 Envíanos un mensaje</h2>
+      <p>Completa el siguiente formulario con tus datos y escribe tu comentario.</p>
+      <form id="formContacto" action="https://formspree.io/f/mrpbooja" method="POST" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre">
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="email" autocomplete="email" required placeholder="nombre@ejemplo.com">
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="_subject" required placeholder="¿Sobre qué quieres hablar?">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje..."></textarea>
+
+        <!-- Campo trampa contra spam: debe quedar vacío -->
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="trampa" aria-hidden="true">
+
+        <button type="submit" id="btnEnviar">Enviar mensaje 🚀</button>
+        <p id="estadoForm" class="estado" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>📍 Información del proyecto</h2>
+      <div class="tarjetas">
+        <div class="tarjeta"><div class="icono">🤖</div><h3>IA Futura</h3><p>Proyecto escolar dedicado a conocer la Inteligencia Artificial.</p></div>
+        <div class="tarjeta"><div class="icono">📚</div><h3>Objetivo</h3><p>Compartir información sencilla sobre la IA y probar un modelo de reconocimiento real.</p></div>
+        <div class="tarjeta"><div class="icono">💻</div><h3>Tecnología</h3><p>PWA con HTML, CSS, JavaScript y un modelo de Teachable Machine.</p></div>
+      </div>
+    </section>
+
+    <section class="frase">
+      <p>🚀 Gracias por visitar IA Futura.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h3>🤖 IA Futura</h3>
+    <p>Proyecto escolar sobre Inteligencia Artificial</p>
+    <p>© 2026 Selene Ariza de la Torre · CBTis 260. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

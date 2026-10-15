@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconocedor | IA Futura</title>
+  <meta name="theme-color" content="#c9b6f0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="imagenes/icon-192.png">
+  <link rel="apple-touch-icon" href="imagenes/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="escuela-barra">
+    <img src="imagenes/logo-escuela.png" alt="Logo CBTis 260" class="logo">
+    <p>Centro de Bachillerato Tecnológico Industrial y de Servicios Núm. 260 · <small>Carmen Serdán Alatriste</small></p>
+  </div>
+
+  <header class="hero">
+    <div class="hero-text">
+      <p class="etiqueta">PRUÉBALO</p>
+      <h1>📷 Reconocedor de identidad</h1>
+      <h2>Resuelve la problemática</h2>
+      <p>Usa la cámara o sube una foto para saber si el modelo te reconoce a ti o a otra persona.</p>
+      <a href="index.html" class="boton">← Volver al inicio</a>
+    </div>
+    <div class="hero-image">
+      <img src="imagenes/Imagen-IA.png" alt="Inteligencia Artificial">
+    </div>
+  </header>
+
+  <nav aria-label="Menú principal">
+    <a href="index.html">Inicio</a>
+    <a href="que-es.html">¿Qué es la IA?</a>
+    <a href="usos.html">Usos</a>
+    <a href="historia.html">Historia</a>
+    <a href="ventajas.html">Ventajas</a>
+    <div class="menu-grupo">
+      <button type="button" class="menu-btn activo" aria-haspopup="true" aria-expanded="false">Mi modelo ▾</button>
+      <div class="submenu">
+        <a href="problematica.html">Problemática</a>
+        <a href="justificacion.html">Justificación</a>
+        <a href="funciona.html">¿Cómo funciona?</a>
+        <a href="resuelve.html" class="activo" aria-current="page">Reconocedor</a>
+      </div>
+    </div>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Resuelve la problemática</h2>
+      <p>Usa la cámara o sube una foto para saber si el modelo te reconoce a ti o a otra persona.</p>
+      <div class="acciones">
+        <button type="button" id="btnCamara">Iniciar cámara</button>
+        <label class="subir">Subir foto<input type="file" id="archivo" accept="image/*"></label>
+      </div>
+      <div class="visor"><div id="camara"></div><img id="foto" alt="Foto a analizar" hidden></div>
+      <div id="resultado" class="resultado" role="status" aria-live="polite">Esperando imagen…</div>
+      <div id="barras"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>🤖 IA Futura</h3>
+    <p>Proyecto escolar sobre Inteligencia Artificial</p>
+    <p>© 2026 Selene Ariza de la Torre · CBTis 260. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script src="js/clasificador.js"></script>
+</body>
+</html>

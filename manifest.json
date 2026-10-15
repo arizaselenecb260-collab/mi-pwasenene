@@ -1,0 +1,17 @@
+{
+  "name": "IA Futura",
+  "short_name": "IA Futura",
+  "description": "PWA escolar sobre Inteligencia Artificial con un reconocedor de identidad hecho con Teachable Machine.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fbf5ff",
+  "theme_color": "#c9b6f0",
+  "lang": "es",
+  "icons": [
+    { "src": "imagenes/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "imagenes/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "imagenes/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
